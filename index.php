@@ -901,7 +901,7 @@
         </div>
     </section>
 </div>
-    <div class="pumpkin-button-holder">
+    <!-- <div class="pumpkin-button-holder">
         <div class="pumpkin-button pumpkin-button-report">
             <a href="#" data-wpel-link="internal"></a>
         </div>
@@ -927,7 +927,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 <footer id="footer">
     <div class="footer">
         <div class="row clearfix">

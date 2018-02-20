@@ -432,37 +432,65 @@ var main = function () {
           "linear-gradient(to bottom,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.4) 20%,rgba(0,0,0,0.7) 100%)"
       });
       if(jQuery(this).has(".line_graph")){
-        jQuery(this).find(".line_graph").animate({
-          'background-position-x': '15px',
-          'background-position-y': '-97px'
-        }, 150, 'linear');
+        serv_ico(jQuery(this).find(".line_graph"), '15px', '-97px');
+        // jQuery(this).find(".line_graph").animate({
+        //   'background-position-x': '15px',
+        //   'background-position-y': '-97px'
+        // }, 150, 'linear');
       }
       if(jQuery(this).has(".soc_media")){
-        jQuery(this).find(".soc_media").animate({
-          'background-position-x': '-99px',
-          'background-position-y': '-97px'
-        }, 150, 'linear');
+        serv_ico(jQuery(this).find(".soc_media"), '-99px', '-97px');
+        // jQuery(this).find(".soc_media").animate({
+        //   'background-position-x': '-99px',
+        //   'background-position-y': '-97px'
+        // }, 150, 'linear');
+      }
+      if(jQuery(this).has('.websites')){
+        serv_ico(jQuery(this).find('.websites'), '-505px', '-98px');
+      }
+      if(jQuery(this).has('.paid_media')){
+        serv_ico(jQuery(this).find('.paid_media'), '-299px', '-96px');
+      }
+      if(jQuery(this).has('.analytics')){
+        serv_ico(jQuery(this).find('.analytics'), '-398px', '-95px');
+      }
+      if(jQuery(this).has('.cont_marketing')){
+        serv_ico(jQuery(this).find('.cont_marketing'), '-201px', '-96px');
       }
     }, function(){
       jQuery(this).find("p").fadeOut();
       jQuery(this).animate({backgroundColor: "#ebebeb"});
       if(jQuery(this).has(".line_graph")){
-        jQuery(this).find(".line_graph").css({"background-position": ""});
-        jQuery(this).find(".line_graph").animate({
-          'background-position-x': '15px',
-          'background-position-y': '2px'
-        }, 150, 'linear');
+        serv_ico(jQuery(this).find(".line_graph"), '15px', '2px');
+        // jQuery(this).find(".line_graph").css({"background-position": ""});
+        // jQuery(this).find(".line_graph").animate({
+        //   'background-position-x': '15px',
+        //   'background-position-y': '2px'
+        // }, 150, 'linear');
       }
       if(jQuery(this).has(".soc_media")){
-        jQuery(this).find(".soc_media").animate({
-          'background-position-x': '-100px',
-          'background-position-y': '7px'
-        }, 150, 'linear');
+        serv_ico(jQuery(this).find(".soc_media"), '-100px', '7px');
+        // jQuery(this).find(".soc_media").animate({
+        //   'background-position-x': '-100px',
+        //   'background-position-y': '7px'
+        // }, 150, 'linear');
+      }
+      if(jQuery(this).has('.websites')){
+        serv_ico(jQuery(this).find('.websites'), '-505px', '1px');
+      }
+      if(jQuery(this).has('.paid_media')){
+        serv_ico(jQuery(this).find('.paid_media'), '-299px', '7px');
+      }
+      if(jQuery(this).has('.analytics')){
+        serv_ico(jQuery(this).find('.analytics'), '-399px', '1px');
+      }
+      if(jQuery(this).has('.cont_marketing')){
+        serv_ico(jQuery(this).find('.cont_marketing'), '-202px', '7px');
       }
     });
 
     function serv_ico(ico, x, y){
-      jQuery(ico).animate({
+      ico.animate({
         'background-position-x': x,
         'background-position-y': y
       }, 150, 'linear');

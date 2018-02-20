@@ -10480,3 +10480,8 @@ body#page-privacy-policy #footer {top: 0;}
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 } */
+
+
+.row li {
+  display:inline;
+}

@@ -330,6 +330,17 @@ var main = function () {
                 top = jQuery(id).offset().top - 75;
             jQuery('body,html').animate({scrollTop: top}, 500);
         });
+        jQuery("a").on("click", function(event){
+          if(this.hash !== ""){
+            event.preventDefault();
+            var hash = this.hash;
+            jQuery('html, body').animate({
+              scrollTop: jQuery(hash).offset().top
+            }, 500, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
         // TABS
         jQuery('.tab_li').on('click', function (e) {
            var tab_li = jQuery('.tab_li'),
